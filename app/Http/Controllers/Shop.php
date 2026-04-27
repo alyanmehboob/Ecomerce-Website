@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 class Shop extends Controller
 {
+
     public function shop()
     {
         $category = Category::all();
@@ -15,11 +16,11 @@ class Shop extends Controller
         return view('shop', compact('category', 'products'));
     }
 
-
     public function category_filter($slugurl)
     {
         $category = Category::where('category_name', $slugurl)->first();
-        $products = Product::where('category_name', $category->category_name)->get();
+        $products = Product::where('emp_id', $category->emp_id)->get();
         return view('category_product_filter', compact('products'));
     }
+
 }

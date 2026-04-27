@@ -45,6 +45,7 @@
                         <thead class="table-dark">
                             <tr>
                                 <th>Id</th>
+                                <th>Category id</th>
                                 <th>Category Name</th>
                                 <th>Slug URL</th>
                                 <th>Status</th>
@@ -59,6 +60,7 @@
 
                             <tr>
                                 <td>{{$loop->iteration}}</td>
+                                <td>{{$val->emp_id}}</td>
                                 <td>{{$val->category_name}}</td>
                                 <td style="width: 250px;">{{$val->slug_url}}</td>
                                 <td><span class="badge bg-success">{{$val->status}}</span></td>

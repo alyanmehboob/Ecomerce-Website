@@ -15,7 +15,7 @@ class CategoryController extends Controller
 
 
     public function category()
-    { 
+    {
         return view('admin_panel/addCategory');
     }
 
@@ -28,7 +28,7 @@ class CategoryController extends Controller
         ]);
 
         $category = new Category();
-        $category->emp_id = rand(10000, 99999); 
+        $category->emp_id = rand(10000, 99999);
         $category->category_name =  ucfirst($request->categoryName);
         $category->slug_url = Str::slug($request->categoryName);
         $category->status = $request->status;
@@ -76,7 +76,6 @@ class CategoryController extends Controller
 
     public function product_insert_data(Request $request)
     {
-
         $request->validate([
             'productName' => 'required',
             'price' => 'required',
@@ -85,13 +84,15 @@ class CategoryController extends Controller
             // 'productImage' => 'required',
             'description' => 'required'
         ]);
+
+        
         $product = new Product();
-        // $product->emp_id = 
+     
         $product->product_name = $request->productName;
         $product->price = $request->price;
         $product->slug_url = Str::slug($request->productName);
-        $product->category_name = $request->selectCategory;
-        // $product->emp_id = $request->selectCategory;
+        // $product->category_name = $request->selectCategory;
+        $product->emp_id = $request->selectCategory;
         $product->stock_quantity = $request->stockQuantity;
         // $product->product_image = $request->productImage;
         $product->description = $request->description;

@@ -34,7 +34,7 @@
                         <thead class="table-dark">
                             <tr>
                                 <th>Id</th>
-                                <th>Category</th>
+                                <th>Category id</th>
                                 <th>Product Name</th>
                                 <th>Price</th>
                                 <th>Stock</th>
@@ -49,7 +49,7 @@
                             @foreach($product as $val)
                             <tr>
                                 <td>{{$loop->iteration}}</td>
-                                <td>{{$val->category_name}}</td>
+                                <td>{{$val->emp_id}}</td>
                                 <td>{{$val->product_name}}</td>
                                 <td>{{$val->price}} </td>
                                 <td>{{$val->stock_quantity}}</td>

@@ -25,9 +25,9 @@
     <div class="container mt-3">
         <div class="row">
             @foreach($products as $product)
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 w-25">
                 <div class="card h-100">
-                    <img src=" " class="card-img-top" alt="image">
+                    <img src="" class="card-img-top" alt="image">
                     <div class="card-body">
                         <h5 class="card-title">{{$product->price}}</h5>
                         <h5 class="card-title">{{$product->product_name}}</h5>
