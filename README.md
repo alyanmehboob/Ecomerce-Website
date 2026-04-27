@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -56,3 +57,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+=======
+# Ecommerce-Website
+I have developed a responsive eCommerce website using HTML5, CSS, Bootstrap, JavaScript, PHP, Laravel, and MySQL. I specialize in backend development using Laravel, focusing on secure authentication, efficient database management, and smooth server-side functionality to ensure a scalable and high-performing system.
+>>>>>>> 478912209990b8ff852a7dc9bbcf89f136075926
